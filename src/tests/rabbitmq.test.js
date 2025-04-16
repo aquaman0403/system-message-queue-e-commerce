@@ -7,6 +7,6 @@ const {
 describe('RabbitMQ Connection', () => {
     it("Should connect to successful RabbitMQ", async () => {
         const result = await connectToRabbitMQForTest()
-        expect(result).toBeUndefined()
+        expect(result).toBe(true);
     })
 })
